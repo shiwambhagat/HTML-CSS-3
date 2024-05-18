@@ -1,0 +1,30 @@
+.container{
+    background-color: brown;
+    border:3px solid black;
+    height:500px;
+    display:grid;
+    grid-template-columns:150px 1fr 1fr;/*1fr 1fr 1fr (for equally divided grid)*/
+    grid-template-rows:30px 1fr 30px;
+    gap:3px;
+
+
+}
+.box{
+    background-color: aqua;
+    border: 3px solid black;
+
+    /* height:80px; */
+}
+#box1,#box4{
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+}
+#box3{
+    grid-column-start: 2;
+    grid-column-end: 4;;
+}
+/* #box3{
+    grid-row-start: 2;
+    grid-row-end: 4;
+} */
